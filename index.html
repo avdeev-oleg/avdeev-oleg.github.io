@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Олег Авдеев</title>
+  <meta charset="UTF-8">
+  <title>Олег Авдеев</title>
+  <style>
+    body {
+      background: #cccccc;
+      font-family: Tahoma, Verdana, Arial, sans-serif;
+      font-size: 12pt;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border: 1px solid #000000;
+      background: #ffffff;
+      width: 900px;
+      margin: 0 auto;
+    }
+    .header {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      text-align: center;
+      color: #ffffff;
+    }
+    .header img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .header-text {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      font-size: 28pt;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000000;
+    }
+    .menu {
+      background: #99ccff;
+      text-align: center;
+      padding: 5px;
+    }
+    .menu a {
+      display: inline-block;
+      padding: 8px 15px;
+      margin: 2px;
+      background: #3366cc;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #003366;
+    }
+    .menu a:hover {
+      background: #003366;
+    }
+    .content {
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #3366cc;
+      color: #003366;
+    }
+    .news {
+      background: #f0f8ff;
+      padding: 10px;
+      border: 1px solid #99ccff;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      text-align: center;
+    }
+    .gallery table {
+      margin: 0 auto;
+    }
+    .gallery img {
+      border: 2px solid #003366;
+      margin: 5px;
+    }
+    .gallery td {
+      text-align: center;
+      font-size: 10pt;
+      padding: 5px;
+    }
+    .footer {
+      background: #003366;
+      color: #ffffff;
+      text-align: center;
+      font-size: 10pt;
+      padding: 5px;
+    }
+  </style>
 </head>
 <body>
-яяя
+
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="header">
+        <!-- Фото в шапке -->
+        <img src="header.png" alt="Шапка сайта">
+      </td>
+    </tr>
+    <tr>
+      <td class="menu">
+        <a href="#news">Новости</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <marquee behavior="scroll" direction="left" bgcolor="#003366" style="color:#ffffff; font-weight:bold; padding:5px;">
+          Добро пожаловать на легендарный сайт 2025 года!ㅤㅤㅤОлег Авдеев - Наш повелитель!ㅤㅤㅤПуть к воротам только через анус!
+        </marquee>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <h2 id="news">Интересности</h2>
+        <div class="news">
+          <b>03.09.2025:</b> Стартуем!!! <br>
+          <b>15.08.2025:</b> Добавлены новые фото в галерею. <br>
+          <b>05.08.2025:</b> Обновлён раздел "О нас".
+        </div>
+
+        <h2 id="gallery">Галерея</h2>
+        <div class="gallery">
+          <table>
+            <tr>
+              <td>
+                <img src="ph1.jpg" alt="Фото1" width="350" height="350"><br>
+                Авдей Бен Тен
+              </td>
+              <td>
+                <img src="ph2.jpg" alt="Фото2" width="200" height="350"><br>
+                Самососательные работы
+              </td>
+              <td>
+                <img src="ph3.jpg" alt="Фото3" width="250" height="350"><br>
+                После полевых
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <h2 id="about">AVDEY COMPANY</h2>
+        <p>Всем привет! Меня зовут Олег, а друзья ласково называют "Малая Авдеевка". Мне с детсва нравится пинать футбольный мячик своим ржавым протезом!</p>
+
+        <h2 id="contacts">Контакты</h2>
+        <p>
+          📧 Email: Почта России (только заказным письмом) <br>
+          ☎ Телефон: Исключетьно домашний... (На проводе) <br>
+          📍 Адрес: Москва-Сити, остальные хуй сосите!
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="footer">
+        © 2025 AVDEY COMPANY | Любитель твоего жеребца!
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>
